@@ -1,0 +1,28 @@
+[project]
+name = "pyducklake"
+version = "0.1.0"
+description = "A Python client for DuckLake — manage lakehouse catalogs (DuckDB, SQLite, PostgreSQL) and object storage (S3, MinIO) through DuckDB."
+readme = "README.md"
+authors = [{ name = "dmitkov28", email = "mitkov.dimitar@yahoo.com" }]
+requires-python = ">=3.10"
+dependencies = ["boto3>=1.42.83", "duckdb>=1.5.1"]
+
+[project.scripts]
+pyducklake = "pyducklake:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = ["pytest>=9.0.2", "pytest-coverage>=0.0", "ruff>=0.15.9"]
+
+[tool.ruff]
+lint.extend-select = ["T100", "T201", "T203"]
+
+[tool.tox]
+env_list = ["py310", "py311", "py312", "py313"]
+
+[tool.tox.env_run_base]
+deps = ["pytest", "pytest-coverage"]
+commands = [["pytest", "tests/", "-v"]]
