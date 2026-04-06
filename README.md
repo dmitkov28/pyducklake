@@ -14,7 +14,15 @@ A Python client for [DuckLake](https://ducklake.select) — manage lakehouse cat
 
 ## Installation
 
-TODO
+Using `uv`:
+```
+uv add https://github.com/dmitkov28/pyducklake/releases/download/0.1.0/pyducklake-0.1.0.tar.gz
+```
+
+Using pip
+```
+pip install https://github.com/dmitkov28/pyducklake/releases/download/0.1.0/pyducklake-0.1.0.tar.gz
+```
 
 ## Quick Start
 
