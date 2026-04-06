@@ -1,4 +1,7 @@
 # pyducklake
+[![CI](https://github.com/dmitkov28/pyducklake/actions/workflows/ci.yml/badge.svg)](https://github.com/dmitkov28/pyducklake/actions/workflows/ci.yml)
+![Python](https://img.shields.io/badge/python-3.10%20|%203.11%20|%203.12%20|%203.13-blue)
+[![License](https://img.shields.io/github/license/dmitkov28/pyducklake)](https://github.com/dmitkov28/pyducklake/blob/main/LICENSE)
 
 A Python client for [DuckLake](https://ducklake.select) — manage lakehouse catalogs and object storage through [DuckDB](https://duckdb.org).
 
